@@ -19,14 +19,17 @@ function integerToLetter(x = false){
 	if(x === false){
 		return "Missing Parameter";
 	}
+	if(x === 27){
+		return String.fromCharCode(32);
+	}
 	return String.fromCharCode(x + 65);
 }
 
 // Returns a letter between a-z
 
 function randLetter(){
-	characterNumber = Math.floor( (Math.random() * 26) );
-	return integerToLetter(characterNumber);
+	characterNumber = Math.floor( (Math.random() * 28) );
+	return integerToLetter(characterNumber).toLowerCase();
 }
 
 // This function is responsbile for creating the lifeform and clearing
