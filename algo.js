@@ -2,7 +2,7 @@
 
 // Character Length -- This is a scale
 // How many individual characters are correct -- This can be a scale
-
+//
 
 
 "use strict";
